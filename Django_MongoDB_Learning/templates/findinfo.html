@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+    </tr>
+    </thead>
+    <tbody>
+        {% for items in res %}
+            <tr>
+        <td>{{ items.name }}</td>
+        <td>{{ items.age }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
